@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 
 import AppNavigator from './navigators/AppNavigator';
 import configureStore from './store/index';
+import { SafeAreaView } from "react-navigation";
 
 const { store } = configureStore();
 
@@ -11,7 +12,9 @@ class App extends Component {
 
     return (
       <Provider store={store}>
-        <AppNavigator />
+        <SafeAreaView style={{ flex: 1 }} forceInset={{ top: 'never' }}>
+          <AppNavigator />
+        </SafeAreaView>
       </Provider>
     );
   }

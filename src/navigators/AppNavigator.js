@@ -2,10 +2,12 @@ import { createAppContainer, createStackNavigator } from "react-navigation";
 
 import NewsContainer from "../screens/News/NewsContainer";
 import NewsDescriptionContainer from '../screens/News/NewsDescriptionContainer';
+import Bookmarks from "../screens/News/views/Bookmarks";
 
 const AppNavigator = createStackNavigator({
   NewsFeed: NewsContainer,
   NewsDescriptionContainer: NewsDescriptionContainer,
+  Bookmarks: Bookmarks,
 }, {
 
   defaultNavigationOptions: {

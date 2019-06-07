@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ScrollView, View, Text, Image} from 'react-native';
+import {ScrollView, View, Text, Image, StatusBar} from 'react-native';
 import { connect } from 'react-redux';
 
 class NewsDescriptionContainer extends Component {
@@ -31,6 +31,9 @@ class NewsDescriptionContainer extends Component {
       <ScrollView
         contentContainerStyle={{ padding: 10 }}
       >
+        <StatusBar
+          barStyle="dark-content"
+        />
         <Text style={{ color: 'black', fontSize: 25, fontWeight: 'bold', marginBottom: 10 }}>{title}</Text>
         <View style={{ flexDirection: 'row', marginBottom: 10 }}>
           <Text style={{ color: 'black', fontWeight: 'bold' }}>{author}</Text>

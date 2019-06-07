@@ -1,0 +1,13 @@
+Instructions for running the project in IOS
+
+1. Open the project folder
+2. Install dependencies using yarn install.
+3. Open the ios/xcodeproj in xcode to run the IOS project.
+4. Select the device in xcode and click on play button.
+5. App will start in the simulator.
+
+Instructions for running the project in IOS
+
+1. Open the project folder
+2. Install dependencies using yarn install.
+3. run command react-native run-android
